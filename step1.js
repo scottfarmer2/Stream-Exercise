@@ -14,7 +14,7 @@ function getAndPrintHTMLChunks () {
 
     response.on('data', function (data){
       console.log('Chunk Received. Length:', data.length);
-    })
+    });
 
     response.on('end', function() {
       console.log('Response stream complete.');
@@ -22,4 +22,4 @@ function getAndPrintHTMLChunks () {
 
   });
 }
-console.log(getAndPrintHTMLChunks());
+getAndPrintHTMLChunks();
